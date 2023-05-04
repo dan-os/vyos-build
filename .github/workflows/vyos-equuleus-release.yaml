@@ -45,7 +45,6 @@ jobs:
           sudo ./configure --architecture $ARCH \
             --build-type $BUILD_TYPE \
             --version $VERSION-$(date +%Y%m%d%H%M) \
-            --custom-package "age" \
             --custom-package "git" \
             --custom-package "jq"
           sudo make iso
